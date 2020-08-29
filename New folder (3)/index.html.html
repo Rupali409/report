@@ -1,0 +1,122 @@
+<html>
+  <head>
+<title>Result</title>
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+
+        var data = google.visualization.arrayToDataTable([
+          ['Section', 'Correct Answers'],
+          ['Spellings',     2,],
+          ['Sentence formation and completion',      1,],
+          ['Fundamentals of Grammar',  4,],
+          ['Ordering of Words', 1,],
+         
+        ]);
+
+        var options = {
+          title: ''
+        };
+
+        var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+        chart.draw(data, options);
+
+      }
+    </script>
+
+<style type="text/css">
+.tftable {font-size:12px;color:#333333;width:100%;border-width: 1px;border-color: #729ea5;border-collapse: collapse;}
+.tftable th {font-size:12px;background-color:#acc8cc;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;text-align:left;}
+.tftable tr {background-color:#d4e3e5;}
+.tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: #729ea5;}
+.tftable tr:hover {background-color:#ffffff;}
+
+
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.spellings {width: 40%; background-color: #4CAF50;} /* Green */
+.sentence {width: 20%; background-color: #2196F3;} /* Blue */
+.fundamentals {width: 80%; background-color: #f44336;} /* Red */
+.ordering {width: 20%; background-color: #F39C12 ;} /* Dark Grey */
+
+h4 {text-align: center;}
+ h1 {text-align: center;} 
+
+   
+</style>
+
+<table class="tftable" border="1">
+
+
+<div class="card">
+  
+  <div class="container">
+<h1><u> Details</u></h1>
+
+    <h4><b>Name:</b>Patrick D</h4>
+
+<h4><b>Id:</b>s5554-560-755</h4>
+
+<h4><b>Email:</b>pat@gmail.com</h4>
+
+<h4><b>Appeard On:</b>07/28/2020</h4>
+    
+  </div>
+</div>
+
+</table>
+<h1><u>Score Status</u> </h1>
+<p><h3>Spellings</h3></p>
+<div class="container">
+  <div class="skills spellings">40%</div>
+</div>
+
+<p><h3>Sentence Formation and Completion</h3></p>
+<div class="container">
+  <div class=" skills sentence ">20%</div>
+</div>
+
+<p><h3>Fundamentals of Grammer</h3></p>
+<div class="container">
+  <div class=" skills fundamentals">80%</div>
+</div>
+
+<p><h3>Ordering of Words</h3></p>
+<div class="container">
+  <div class=" skills ordering ">20%</div>
+</div>
+
+
+
+
+  </head>
+  <body
+
+<img src="avatar.png" alt="Avatar" class="avatar">
+<h1> <u>Correct Answers Out of 5 </u></h1>  
+    <div id="piechart" style="width: 900px; height: 500px;"></div>
+  </body>
+</html>
+
+
+
+
